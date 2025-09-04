@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Game Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-height: 100vh;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            vertical-align: top;
+        }
+        /* Header */
+        .header {
+            text-align: center;
+            background: linear-gradient(90deg, #2196F3, #0D47A1);
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 40px 20px;
+        }
+        /* Navbar */
+        .navbar {
+            text-align: center;
+            background-color: #333;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        /* Sidebar */
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            font-size: 16px;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 10px;
+            display: block;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .sidebar ul li a:hover {
+            background-color: #ddd;
+        }
+        /* Konten */
+        .content {
+            width: 75%;
+        }
+        .content h2 {
+            margin-top: 0;
+            color: #2196F3;
+        }
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .game-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background: white;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            background: #f0f8ff;
+        }
+        .game-card h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            background: #2196F3;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0D47A1;
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Baris 1: Header -->
+        <tr>
+            <td colspan="2" class="header">
+                💎 Top Up Game Online
+            </td>
+        </tr>
+
+        <!-- Baris 2: Navigasi -->
+        <tr>
+            <td colspan="2" class="navbar">
+                <a href="#">Beranda</a>
+                <a href="#">Daftar Game</a>
+                <a href="#">Promo</a>
+                <a href="#">Bantuan</a>
+            </td>
+        </tr>
+
+        <!-- Baris 3: Sidebar + Konten -->
+        <tr>
+            <!-- Sidebar -->
+            <td class="sidebar">
+                <h3>📌 Kategori</h3>
+                <ul>
+                    <li><a href="#">Mobile Legends</a></li>
+                    <li><a href="#">Free Fire</a></li>
+                    <li><a href="#">PUBG Mobile</a></li>
+                    <li><a href="#">Valorant</a></li>
+                    <li><a href="#">Genshin Impact</a></li>
+                </ul>
+            </td>
+
+            <!-- Konten -->
+            <td class="content">
+                <h2>Selamat Datang di Situs Top Up!</h2>
+                <p>
+                    Top Up cepat, mudah, dan terpercaya untuk berbagai game populer.  
+                    Pilih game favoritmu dan lakukan top up dalam hitungan detik.
+                </p>
+
+                <div class="game-list">
+                    <div class="game-card" onclick="location.href='topup-ml.html'">
+                        <h3>Mobile Legends</h3>
+                        <p>Top Up Diamond Mobile Legends resmi & aman.</p>
+                        <span class="btn">Top Up Sekarang</span>
+                    </div>
+
+                    <div class="game-card" onclick="location.href='topup-ff.html'">
+                        <h3>Free Fire</h3>
+                        <p>Dapatkan Diamond Free Fire dengan harga murah.</p>
+                        <span class="btn">Top Up Sekarang</span>
+                    </div>
+
+                    <div class="game-card" onclick="location.href='topup-pubg.html'">
+                        <h3>PUBG Mobile</h3>
+                        <p>Beli UC PUBG Mobile resmi dengan metode pembayaran lengkap.</p>
+                        <span class="btn">Top Up Sekarang</span>
+                    </div>
+
+                    <div class="game-card" onclick="location.href='topup-valorant.html'">
+                        <h3>Valorant</h3>
+                        <p>Top Up Valorant Points dengan mudah & aman.</p>
+                        <span class="btn">Top Up Sekarang</span>
+                    </div>
+
+                    <div class="game-card" onclick="location.href='topup-genshin.html'">
+                        <h3>Genshin Impact</h3>
+                        <p>Dapatkan Genesis Crystal Genshin Impact cepat & aman.</p>
+                        <span class="btn">Top Up Sekarang</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Baris 4: Footer -->
+        <tr>
+            <td colspan="2" class="footer">
+                © 2025 Top Up Game Online | Cepat • Aman • Terpercaya
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
