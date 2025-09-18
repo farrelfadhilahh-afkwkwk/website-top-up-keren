@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            width: 400px;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="password"], textarea, select {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            resize: none; /* supaya tidak bisa di drag besar kecil */
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda">
+
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password">
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" placeholder="Tulis alamat lengkap..."></textarea>
+
+        <label>Jenis Kelamin:</label>
+         <label for="laki">Laki-laki</label>
+        <input type="radio" id="laki" name="gender" value="Laki-laki">
+        <label for="perempuan">Perempuan</label>
+        <input type="radio" id="perempuan" name="gender" value="Perempuan">
+
+        <label>Hobi:</label>
+         <label for="Ngoding">Ngoding</label>
+        <input type="checkbox" id="Ngoding" name="hobi" value="Ngoding">
+        <label for="olahraga">Olahraga</label>
+        <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+        <label for="Game">Game</label>
+        <input type="checkbox" id="Game" name="hobi" value="Game">
+
+        <label for="jurusan">Pilih Jurusan:</label>
+        <select id="jurusan" name="jurusan">
+            <option value="">--Pilih--</option>
+            <option value="TI">Teknologi Informasi</option>
+            <option value="IK">Ilmu Komputer</option>
+            <option value="DKV">Desain Komunikasi Visual</option>
+        </select>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
