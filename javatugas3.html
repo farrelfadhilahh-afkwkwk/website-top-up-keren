@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kalkulator sederhana</title>
+    <style>
+        body{
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+        .kotak{
+            width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+        .kolom{
+            flex: 1;
+            padding: 10px;
+        }
+        input{
+            margin: 5px 0;
+            padding: 5px;
+            width: 90%;
+        }
+        button{
+            margin: 5px;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+        #hasilbox{
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px dashed #aaa;
+            background: #fafafa;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak">
+        <h3>kalkulator</h3>
+        <div class="row">
+            <!-- kiri -->
+            <div class="kolom">
+                <input type="number" id="angka1" placeholder="angka 1"><br>
+                <input type="number" id="angka2" placeholder="angka 2"><br>
+            </div>
+            <!-- kanan -->
+            <div class="kolom">
+                <button onclick="tambah()">+</button>
+                <button onclick="kurang()">-</button><br>
+                <button onclick="kali()">*</button>
+                <button onclick="bagi()">/</button>
+            </div>
+        </div>
+
+        <div id="hasilbox">
+            hasil: <span id="hasil"></span>
+        </div>
+    </div>
+
+    <script>
+        function tambah(){
+            var a = document.getElementById("angka1").value
+            var b = document.getElementById("angka2").value
+            var c = parseFloat(a) + parseFloat(b)
+            document.getElementById("hasil").innerHTML = c
+        }
+
+        function kurang(){
+            var a = document.getElementById("angka1").value
+            var b = document.getElementById("angka2").value
+            var c = parseFloat(a) - parseFloat(b)
+            document.getElementById("hasil").innerHTML = c
+        }
+
+        function kali(){
+            var a = document.getElementById("angka1").value
+            var b = document.getElementById("angka2").value
+            var c = parseFloat(a) * parseFloat(b)
+            document.getElementById("hasil").innerHTML = c
+        }
+
+        function bagi(){
+            var a = document.getElementById("angka1").value
+            var b = document.getElementById("angka2").value
+            var c = parseFloat(a) / parseFloat(b)
+            document.getElementById("hasil").innerHTML = c
+        }
+    </script>
+</body>
+</html>
